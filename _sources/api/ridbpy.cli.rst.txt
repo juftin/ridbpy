@@ -1,0 +1,7 @@
+ridbpy.cli module
+=================
+
+.. automodule:: ridbpy.cli
+   :members:
+   :undoc-members:
+   :show-inheritance:

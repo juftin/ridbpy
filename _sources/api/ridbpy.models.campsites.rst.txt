@@ -1,0 +1,7 @@
+ridbpy.models.campsites module
+==============================
+
+.. automodule:: ridbpy.models.campsites
+   :members:
+   :undoc-members:
+   :show-inheritance:

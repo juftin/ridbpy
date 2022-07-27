@@ -1,0 +1,23 @@
+ridbpy.models package
+=====================
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   ridbpy.models.campsites
+   ridbpy.models.equipment
+   ridbpy.models.facilities
+   ridbpy.models.joins
+   ridbpy.models.organizations
+   ridbpy.models.recareas
+
+Module contents
+---------------
+
+.. automodule:: ridbpy.models
+   :members:
+   :undoc-members:
+   :show-inheritance:

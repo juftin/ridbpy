@@ -1,0 +1,7 @@
+ridbpy.models.organizations module
+==================================
+
+.. automodule:: ridbpy.models.organizations
+   :members:
+   :undoc-members:
+   :show-inheritance:

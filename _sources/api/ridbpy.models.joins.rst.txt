@@ -1,0 +1,7 @@
+ridbpy.models.joins module
+==========================
+
+.. automodule:: ridbpy.models.joins
+   :members:
+   :undoc-members:
+   :show-inheritance:

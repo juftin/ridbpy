@@ -1,0 +1,7 @@
+ridbpy.models.facilities module
+===============================
+
+.. automodule:: ridbpy.models.facilities
+   :members:
+   :undoc-members:
+   :show-inheritance:

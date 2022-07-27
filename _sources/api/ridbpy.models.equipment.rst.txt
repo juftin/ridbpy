@@ -1,0 +1,7 @@
+ridbpy.models.equipment module
+==============================
+
+.. automodule:: ridbpy.models.equipment
+   :members:
+   :undoc-members:
+   :show-inheritance:

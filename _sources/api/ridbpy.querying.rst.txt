@@ -1,0 +1,7 @@
+ridbpy.querying module
+======================
+
+.. automodule:: ridbpy.querying
+   :members:
+   :undoc-members:
+   :show-inheritance:

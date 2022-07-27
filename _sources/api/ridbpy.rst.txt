@@ -1,0 +1,28 @@
+ridbpy package
+==============
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   ridbpy.models
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   ridbpy.application
+   ridbpy.cli
+   ridbpy.querying
+
+Module contents
+---------------
+
+.. automodule:: ridbpy
+   :members:
+   :undoc-members:
+   :show-inheritance:

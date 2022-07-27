@@ -1,0 +1,7 @@
+ridbpy
+======
+
+.. toctree::
+   :maxdepth: 4
+
+   ridbpy

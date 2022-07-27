@@ -1,0 +1,7 @@
+ridbpy.models.recareas module
+=============================
+
+.. automodule:: ridbpy.models.recareas
+   :members:
+   :undoc-members:
+   :show-inheritance:
