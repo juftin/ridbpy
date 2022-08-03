@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ridbpy.models package &mdash; ridbpy 0.0.1 documentation</title>
+  <title>ridbpy.models package &mdash; ridbpy 0.0.2 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
@@ -18,6 +18,7 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
@@ -25,7 +26,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="ridbpy.models.campsites module" href="ridbpy.models.campsites.html" />
-    <link rel="prev" title="ridbpy package" href="ridbpy.html" /> 
+    <link rel="prev" title="ridbpy.config.file_config module" href="ridbpy.config.file_config.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -36,7 +37,7 @@
             <a href="../index.html" class="icon icon-home"> ridbpy
           </a>
               <div class="version">
-                0.0.1
+                0.0.2
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -47,11 +48,12 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../README.html">ridbPy</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../cli.html">ridbPy CLI</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="modules.html">API Documentation</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">ridbPy 🏠</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cli.html">Command Line Interface ⌨️</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">API Documentation 🤖</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="ridbpy.html">ridbpy package</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="ridbpy.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="ridbpy.config.html">ridbpy.config package</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">ridbpy.models package</a></li>
 </ul>
 </li>
@@ -61,6 +63,9 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing 👥</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/juftin/ridbpy">GitHub 🛠</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/juftin/ridbpy/releases">Changelog 📝</a></li>
 </ul>
 
         </div>
@@ -89,9 +94,9 @@
            <div itemprop="articleBody">
              
   <section id="ridbpy-models-package">
-<h1>ridbpy.models package<a class="headerlink" href="#ridbpy-models-package" title="Permalink to this headline"></a></h1>
+<h1>ridbpy.models package<a class="headerlink" href="#ridbpy-models-package" title="Permalink to this heading"></a></h1>
 <section id="submodules">
-<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline"></a></h2>
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="ridbpy.models.campsites.html">ridbpy.models.campsites module</a></li>
@@ -104,12 +109,12 @@
 </div>
 </section>
 <section id="module-ridbpy.models">
-<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-ridbpy.models" title="Permalink to this headline"></a></h2>
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-ridbpy.models" title="Permalink to this heading"></a></h2>
 <p>RIDB Data Models</p>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="ridbpy.models.CampsiteAttributes">
 <em class="property"><span class="pre">pydantic</span> <span class="pre">model</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ridbpy.models.</span></span><span class="sig-name descname"><span class="pre">CampsiteAttributes</span></span><a class="reference internal" href="../_modules/ridbpy/models/campsites.html#CampsiteAttributes"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#ridbpy.models.CampsiteAttributes" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ridbpy.models._base.RidbPyModel</span></code></p>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">RidbPyModel</span></code></p>
 <p>Campsite Attributes</p>
 <dl class="field-list simple">
 <dt class="field-odd">Config</dt>
@@ -139,7 +144,7 @@
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.CampsiteAttributes.AttributeValue">
-<span class="sig-name descname"><span class="pre">AttributeValue</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.CampsiteAttributes.AttributeValue" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">AttributeValue</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.CampsiteAttributes.AttributeValue" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -154,7 +159,7 @@
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.CampsiteAttributes.campsite">
-<span class="sig-name descname"><span class="pre">campsite</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="ridbpy.models.campsites.html#ridbpy.models.campsites.Campsites" title="ridbpy.models.campsites.Campsites"><span class="pre">ridbpy.models.campsites.Campsites</span></a></em><a class="headerlink" href="#ridbpy.models.CampsiteAttributes.campsite" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">campsite</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="ridbpy.models.campsites.html#ridbpy.models.campsites.Campsites" title="ridbpy.models.campsites.Campsites"><span class="pre">Campsites</span></a></em><a class="headerlink" href="#ridbpy.models.CampsiteAttributes.campsite" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -162,7 +167,7 @@
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="ridbpy.models.Campsites">
 <em class="property"><span class="pre">pydantic</span> <span class="pre">model</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ridbpy.models.</span></span><span class="sig-name descname"><span class="pre">Campsites</span></span><a class="reference internal" href="../_modules/ridbpy/models/campsites.html#Campsites"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#ridbpy.models.Campsites" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ridbpy.models._base.RidbPyModel</span></code></p>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">RidbPyModel</span></code></p>
 <p>Campsite Information</p>
 <dl class="field-list simple">
 <dt class="field-odd">Config</dt>
@@ -208,17 +213,17 @@
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.Campsites.CampsiteName">
-<span class="sig-name descname"><span class="pre">CampsiteName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Campsites.CampsiteName" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">CampsiteName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Campsites.CampsiteName" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.Campsites.CampsiteType">
-<span class="sig-name descname"><span class="pre">CampsiteType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Campsites.CampsiteType" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">CampsiteType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Campsites.CampsiteType" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.Campsites.CreatedDate">
-<span class="sig-name descname"><span class="pre">CreatedDate</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.date" title="(in Python v3.10)"><span class="pre">datetime.date</span></a></em><a class="headerlink" href="#ridbpy.models.Campsites.CreatedDate" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">CreatedDate</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.date" title="(in Python v3.10)"><span class="pre">date</span></a></em><a class="headerlink" href="#ridbpy.models.Campsites.CreatedDate" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -228,12 +233,12 @@
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.Campsites.LastUpdatedDate">
-<span class="sig-name descname"><span class="pre">LastUpdatedDate</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.date" title="(in Python v3.10)"><span class="pre">datetime.date</span></a></em><a class="headerlink" href="#ridbpy.models.Campsites.LastUpdatedDate" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">LastUpdatedDate</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.date" title="(in Python v3.10)"><span class="pre">date</span></a></em><a class="headerlink" href="#ridbpy.models.Campsites.LastUpdatedDate" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.Campsites.Loop">
-<span class="sig-name descname"><span class="pre">Loop</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Campsites.Loop" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">Loop</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Campsites.Loop" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -243,17 +248,17 @@
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.Campsites.attributes">
-<span class="sig-name descname"><span class="pre">attributes</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#ridbpy.models.CampsiteAttributes" title="ridbpy.models.CampsiteAttributes"><span class="pre">CampsiteAttributes</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Campsites.attributes" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">attributes</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.10)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#ridbpy.models.CampsiteAttributes" title="ridbpy.models.CampsiteAttributes"><span class="pre">CampsiteAttributes</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Campsites.attributes" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.Campsites.facility">
-<span class="sig-name descname"><span class="pre">facility</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="ridbpy.models.facilities.html#ridbpy.models.facilities.Facilities" title="ridbpy.models.facilities.Facilities"><span class="pre">ridbpy.models.facilities.Facilities</span></a></em><a class="headerlink" href="#ridbpy.models.Campsites.facility" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">facility</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="ridbpy.models.facilities.html#ridbpy.models.facilities.Facilities" title="ridbpy.models.facilities.Facilities"><span class="pre">Facilities</span></a></em><a class="headerlink" href="#ridbpy.models.Campsites.facility" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.Campsites.permitted_equipment">
-<span class="sig-name descname"><span class="pre">permitted_equipment</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="ridbpy.models.equipment.html#ridbpy.models.equipment.PermittedEquipment" title="ridbpy.models.equipment.PermittedEquipment"><span class="pre">ridbpy.models.equipment.PermittedEquipment</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Campsites.permitted_equipment" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">permitted_equipment</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.10)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="ridbpy.models.equipment.html#ridbpy.models.equipment.PermittedEquipment" title="ridbpy.models.equipment.PermittedEquipment"><span class="pre">PermittedEquipment</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Campsites.permitted_equipment" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -261,7 +266,7 @@
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="ridbpy.models.PermittedEquipment">
 <em class="property"><span class="pre">pydantic</span> <span class="pre">model</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ridbpy.models.</span></span><span class="sig-name descname"><span class="pre">PermittedEquipment</span></span><a class="reference internal" href="../_modules/ridbpy/models/equipment.html#PermittedEquipment"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#ridbpy.models.PermittedEquipment" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ridbpy.models._base.RidbPyModel</span></code></p>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">RidbPyModel</span></code></p>
 <p>Campsite Equipment Information</p>
 <dl class="field-list simple">
 <dt class="field-odd">Config</dt>
@@ -302,7 +307,7 @@
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="ridbpy.models.Facilities">
 <em class="property"><span class="pre">pydantic</span> <span class="pre">model</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ridbpy.models.</span></span><span class="sig-name descname"><span class="pre">Facilities</span></span><a class="reference internal" href="../_modules/ridbpy/models/facilities.html#Facilities"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#ridbpy.models.Facilities" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ridbpy.models._base.RidbPyModel</span></code></p>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">RidbPyModel</span></code></p>
 <p>Facility Information</p>
 <dl class="field-list simple">
 <dt class="field-odd">Config</dt>
@@ -344,22 +349,22 @@
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.Facilities.FacilityAdaAccess">
-<span class="sig-name descname"><span class="pre">FacilityAdaAccess</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Facilities.FacilityAdaAccess" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">FacilityAdaAccess</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Facilities.FacilityAdaAccess" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.Facilities.FacilityDescription">
-<span class="sig-name descname"><span class="pre">FacilityDescription</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Facilities.FacilityDescription" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">FacilityDescription</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Facilities.FacilityDescription" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.Facilities.FacilityDirections">
-<span class="sig-name descname"><span class="pre">FacilityDirections</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Facilities.FacilityDirections" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">FacilityDirections</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Facilities.FacilityDirections" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.Facilities.FacilityEmail">
-<span class="sig-name descname"><span class="pre">FacilityEmail</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Facilities.FacilityEmail" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">FacilityEmail</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Facilities.FacilityEmail" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -379,47 +384,47 @@
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.Facilities.FacilityMapURL">
-<span class="sig-name descname"><span class="pre">FacilityMapURL</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Facilities.FacilityMapURL" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">FacilityMapURL</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Facilities.FacilityMapURL" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.Facilities.FacilityName">
-<span class="sig-name descname"><span class="pre">FacilityName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Facilities.FacilityName" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">FacilityName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Facilities.FacilityName" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.Facilities.FacilityPhone">
-<span class="sig-name descname"><span class="pre">FacilityPhone</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Facilities.FacilityPhone" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">FacilityPhone</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Facilities.FacilityPhone" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.Facilities.FacilityReservationURL">
-<span class="sig-name descname"><span class="pre">FacilityReservationURL</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Facilities.FacilityReservationURL" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">FacilityReservationURL</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Facilities.FacilityReservationURL" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.Facilities.FacilityTypeDescription">
-<span class="sig-name descname"><span class="pre">FacilityTypeDescription</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Facilities.FacilityTypeDescription" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">FacilityTypeDescription</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Facilities.FacilityTypeDescription" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.Facilities.FacilityUseFeeDescription">
-<span class="sig-name descname"><span class="pre">FacilityUseFeeDescription</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Facilities.FacilityUseFeeDescription" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">FacilityUseFeeDescription</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Facilities.FacilityUseFeeDescription" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.Facilities.Keywords">
-<span class="sig-name descname"><span class="pre">Keywords</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Facilities.Keywords" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">Keywords</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Facilities.Keywords" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.Facilities.LastUpdatedDate">
-<span class="sig-name descname"><span class="pre">LastUpdatedDate</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.date" title="(in Python v3.10)"><span class="pre">datetime.date</span></a></em><a class="headerlink" href="#ridbpy.models.Facilities.LastUpdatedDate" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">LastUpdatedDate</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.date" title="(in Python v3.10)"><span class="pre">date</span></a></em><a class="headerlink" href="#ridbpy.models.Facilities.LastUpdatedDate" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.Facilities.LegacyFacilityID">
-<span class="sig-name descname"><span class="pre">LegacyFacilityID</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Facilities.LegacyFacilityID" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">LegacyFacilityID</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Facilities.LegacyFacilityID" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -429,12 +434,12 @@
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.Facilities.ParentOrgID">
-<span class="sig-name descname"><span class="pre">ParentOrgID</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Facilities.ParentOrgID" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">ParentOrgID</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Facilities.ParentOrgID" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.Facilities.ParentRecAreaID">
-<span class="sig-name descname"><span class="pre">ParentRecAreaID</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Facilities.ParentRecAreaID" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">ParentRecAreaID</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Facilities.ParentRecAreaID" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -444,17 +449,17 @@
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.Facilities.StayLimit">
-<span class="sig-name descname"><span class="pre">StayLimit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Facilities.StayLimit" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">StayLimit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Facilities.StayLimit" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.Facilities.addresses">
-<span class="sig-name descname"><span class="pre">addresses</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="ridbpy.models.facilities.html#ridbpy.models.facilities.FacilityAddresses" title="ridbpy.models.facilities.FacilityAddresses"><span class="pre">ridbpy.models.facilities.FacilityAddresses</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Facilities.addresses" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">addresses</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.10)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="ridbpy.models.facilities.html#ridbpy.models.facilities.FacilityAddresses" title="ridbpy.models.facilities.FacilityAddresses"><span class="pre">FacilityAddresses</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Facilities.addresses" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.Facilities.campsites">
-<span class="sig-name descname"><span class="pre">campsites</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#ridbpy.models.Campsites" title="ridbpy.models.Campsites"><span class="pre">Campsites</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Facilities.campsites" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">campsites</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.10)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#ridbpy.models.Campsites" title="ridbpy.models.Campsites"><span class="pre">Campsites</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Facilities.campsites" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -467,7 +472,7 @@
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="ridbpy.models.FacilityAddresses">
 <em class="property"><span class="pre">pydantic</span> <span class="pre">model</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ridbpy.models.</span></span><span class="sig-name descname"><span class="pre">FacilityAddresses</span></span><a class="reference internal" href="../_modules/ridbpy/models/facilities.html#FacilityAddresses"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#ridbpy.models.FacilityAddresses" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ridbpy.models._base.RidbPyModel</span></code></p>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">RidbPyModel</span></code></p>
 <p>Addresses for Facilities</p>
 <dl class="field-list simple">
 <dt class="field-odd">Config</dt>
@@ -493,17 +498,17 @@
 </dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.FacilityAddresses.AddressCountryCode">
-<span class="sig-name descname"><span class="pre">AddressCountryCode</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.FacilityAddresses.AddressCountryCode" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">AddressCountryCode</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.FacilityAddresses.AddressCountryCode" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.FacilityAddresses.AddressStateCode">
-<span class="sig-name descname"><span class="pre">AddressStateCode</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.FacilityAddresses.AddressStateCode" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">AddressStateCode</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.FacilityAddresses.AddressStateCode" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.FacilityAddresses.City">
-<span class="sig-name descname"><span class="pre">City</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.FacilityAddresses.City" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">City</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.FacilityAddresses.City" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -523,27 +528,27 @@
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.FacilityAddresses.FacilityStreetAddress1">
-<span class="sig-name descname"><span class="pre">FacilityStreetAddress1</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.FacilityAddresses.FacilityStreetAddress1" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">FacilityStreetAddress1</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.FacilityAddresses.FacilityStreetAddress1" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.FacilityAddresses.FacilityStreetAddress2">
-<span class="sig-name descname"><span class="pre">FacilityStreetAddress2</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.FacilityAddresses.FacilityStreetAddress2" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">FacilityStreetAddress2</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.FacilityAddresses.FacilityStreetAddress2" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.FacilityAddresses.FacilityStreetAddress3">
-<span class="sig-name descname"><span class="pre">FacilityStreetAddress3</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.FacilityAddresses.FacilityStreetAddress3" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">FacilityStreetAddress3</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.FacilityAddresses.FacilityStreetAddress3" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.FacilityAddresses.LastUpdatedDate">
-<span class="sig-name descname"><span class="pre">LastUpdatedDate</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.date" title="(in Python v3.10)"><span class="pre">datetime.date</span></a></em><a class="headerlink" href="#ridbpy.models.FacilityAddresses.LastUpdatedDate" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">LastUpdatedDate</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.date" title="(in Python v3.10)"><span class="pre">date</span></a></em><a class="headerlink" href="#ridbpy.models.FacilityAddresses.LastUpdatedDate" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.FacilityAddresses.PostalCode">
-<span class="sig-name descname"><span class="pre">PostalCode</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.FacilityAddresses.PostalCode" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">PostalCode</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.FacilityAddresses.PostalCode" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -556,7 +561,7 @@
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="ridbpy.models.RecAreaFacilities">
 <em class="property"><span class="pre">pydantic</span> <span class="pre">model</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ridbpy.models.</span></span><span class="sig-name descname"><span class="pre">RecAreaFacilities</span></span><a class="reference internal" href="../_modules/ridbpy/models/joins.html#RecAreaFacilities"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#ridbpy.models.RecAreaFacilities" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ridbpy.models._base.RidbPyModel</span></code></p>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">RidbPyModel</span></code></p>
 <p>Join Table Between Recreation Areas and Facilities</p>
 <dl class="field-list simple">
 <dt class="field-odd">Config</dt>
@@ -586,7 +591,7 @@
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="ridbpy.models.Organizations">
 <em class="property"><span class="pre">pydantic</span> <span class="pre">model</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ridbpy.models.</span></span><span class="sig-name descname"><span class="pre">Organizations</span></span><a class="reference internal" href="../_modules/ridbpy/models/organizations.html#Organizations"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#ridbpy.models.Organizations" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ridbpy.models._base.RidbPyModel</span></code></p>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">RidbPyModel</span></code></p>
 <p>Organization Information</p>
 <dl class="field-list simple">
 <dt class="field-odd">Config</dt>
@@ -611,12 +616,12 @@
 </dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.Organizations.LastUpdatedDate">
-<span class="sig-name descname"><span class="pre">LastUpdatedDate</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.date" title="(in Python v3.10)"><span class="pre">datetime.date</span></a></em><a class="headerlink" href="#ridbpy.models.Organizations.LastUpdatedDate" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">LastUpdatedDate</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.date" title="(in Python v3.10)"><span class="pre">date</span></a></em><a class="headerlink" href="#ridbpy.models.Organizations.LastUpdatedDate" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.Organizations.OrgAbbrevName">
-<span class="sig-name descname"><span class="pre">OrgAbbrevName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Organizations.OrgAbbrevName" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">OrgAbbrevName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Organizations.OrgAbbrevName" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -626,12 +631,12 @@
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.Organizations.OrgImageURL">
-<span class="sig-name descname"><span class="pre">OrgImageURL</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Organizations.OrgImageURL" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">OrgImageURL</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Organizations.OrgImageURL" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.Organizations.OrgJurisdictionType">
-<span class="sig-name descname"><span class="pre">OrgJurisdictionType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Organizations.OrgJurisdictionType" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">OrgJurisdictionType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Organizations.OrgJurisdictionType" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -651,17 +656,17 @@
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.Organizations.OrgURLAddress">
-<span class="sig-name descname"><span class="pre">OrgURLAddress</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Organizations.OrgURLAddress" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">OrgURLAddress</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Organizations.OrgURLAddress" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.Organizations.OrgURLText">
-<span class="sig-name descname"><span class="pre">OrgURLText</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Organizations.OrgURLText" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">OrgURLText</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Organizations.OrgURLText" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.Organizations.recreation_areas">
-<span class="sig-name descname"><span class="pre">recreation_areas</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#ridbpy.models.RecAreas" title="ridbpy.models.RecAreas"><span class="pre">RecAreas</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Organizations.recreation_areas" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">recreation_areas</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.10)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#ridbpy.models.RecAreas" title="ridbpy.models.RecAreas"><span class="pre">RecAreas</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.Organizations.recreation_areas" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -669,7 +674,7 @@
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="ridbpy.models.OrgEntities">
 <em class="property"><span class="pre">pydantic</span> <span class="pre">model</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ridbpy.models.</span></span><span class="sig-name descname"><span class="pre">OrgEntities</span></span><a class="reference internal" href="../_modules/ridbpy/models/organizations.html#OrgEntities"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#ridbpy.models.OrgEntities" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ridbpy.models._base.RidbPyModel</span></code></p>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">RidbPyModel</span></code></p>
 <p>Organization Entity Information</p>
 <dl class="field-list simple">
 <dt class="field-odd">Config</dt>
@@ -705,7 +710,7 @@
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="ridbpy.models.RecAreaAddresses">
 <em class="property"><span class="pre">pydantic</span> <span class="pre">model</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ridbpy.models.</span></span><span class="sig-name descname"><span class="pre">RecAreaAddresses</span></span><a class="reference internal" href="../_modules/ridbpy/models/recareas.html#RecAreaAddresses"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#ridbpy.models.RecAreaAddresses" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ridbpy.models._base.RidbPyModel</span></code></p>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">RidbPyModel</span></code></p>
 <p>Recreation Area Addresses</p>
 <dl class="field-list simple">
 <dt class="field-odd">Config</dt>
@@ -731,27 +736,27 @@
 </dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.RecAreaAddresses.AddressCountryCode">
-<span class="sig-name descname"><span class="pre">AddressCountryCode</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreaAddresses.AddressCountryCode" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">AddressCountryCode</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreaAddresses.AddressCountryCode" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.RecAreaAddresses.AddressStateCode">
-<span class="sig-name descname"><span class="pre">AddressStateCode</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreaAddresses.AddressStateCode" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">AddressStateCode</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreaAddresses.AddressStateCode" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.RecAreaAddresses.City">
-<span class="sig-name descname"><span class="pre">City</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreaAddresses.City" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">City</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreaAddresses.City" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.RecAreaAddresses.LastUpdatedDate">
-<span class="sig-name descname"><span class="pre">LastUpdatedDate</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.date" title="(in Python v3.10)"><span class="pre">datetime.date</span></a></em><a class="headerlink" href="#ridbpy.models.RecAreaAddresses.LastUpdatedDate" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">LastUpdatedDate</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.date" title="(in Python v3.10)"><span class="pre">date</span></a></em><a class="headerlink" href="#ridbpy.models.RecAreaAddresses.LastUpdatedDate" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.RecAreaAddresses.PostalCode">
-<span class="sig-name descname"><span class="pre">PostalCode</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreaAddresses.PostalCode" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">PostalCode</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreaAddresses.PostalCode" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -771,22 +776,22 @@
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.RecAreaAddresses.RecAreaStreetAddress1">
-<span class="sig-name descname"><span class="pre">RecAreaStreetAddress1</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreaAddresses.RecAreaStreetAddress1" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">RecAreaStreetAddress1</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreaAddresses.RecAreaStreetAddress1" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.RecAreaAddresses.RecAreaStreetAddress2">
-<span class="sig-name descname"><span class="pre">RecAreaStreetAddress2</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreaAddresses.RecAreaStreetAddress2" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">RecAreaStreetAddress2</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreaAddresses.RecAreaStreetAddress2" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.RecAreaAddresses.RecAreaStreetAddress3">
-<span class="sig-name descname"><span class="pre">RecAreaStreetAddress3</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreaAddresses.RecAreaStreetAddress3" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">RecAreaStreetAddress3</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreaAddresses.RecAreaStreetAddress3" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.RecAreaAddresses.recreation_area">
-<span class="sig-name descname"><span class="pre">recreation_area</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="ridbpy.models.recareas.html#ridbpy.models.recareas.RecAreas" title="ridbpy.models.recareas.RecAreas"><span class="pre">ridbpy.models.recareas.RecAreas</span></a></em><a class="headerlink" href="#ridbpy.models.RecAreaAddresses.recreation_area" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">recreation_area</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="ridbpy.models.recareas.html#ridbpy.models.recareas.RecAreas" title="ridbpy.models.recareas.RecAreas"><span class="pre">RecAreas</span></a></em><a class="headerlink" href="#ridbpy.models.RecAreaAddresses.recreation_area" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -794,7 +799,7 @@
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="ridbpy.models.RecAreas">
 <em class="property"><span class="pre">pydantic</span> <span class="pre">model</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ridbpy.models.</span></span><span class="sig-name descname"><span class="pre">RecAreas</span></span><a class="reference internal" href="../_modules/ridbpy/models/recareas.html#RecAreas"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#ridbpy.models.RecAreas" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ridbpy.models._base.RidbPyModel</span></code></p>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">RidbPyModel</span></code></p>
 <p>Recreation Area Data</p>
 <dl class="field-list simple">
 <dt class="field-odd">Config</dt>
@@ -832,17 +837,17 @@
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.RecAreas.Keywords">
-<span class="sig-name descname"><span class="pre">Keywords</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreas.Keywords" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">Keywords</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreas.Keywords" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.RecAreas.LastUpdatedDate">
-<span class="sig-name descname"><span class="pre">LastUpdatedDate</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.date" title="(in Python v3.10)"><span class="pre">datetime.date</span></a></em><a class="headerlink" href="#ridbpy.models.RecAreas.LastUpdatedDate" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">LastUpdatedDate</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.date" title="(in Python v3.10)"><span class="pre">date</span></a></em><a class="headerlink" href="#ridbpy.models.RecAreas.LastUpdatedDate" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.RecAreas.OrgRecAreaID">
-<span class="sig-name descname"><span class="pre">OrgRecAreaID</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreas.OrgRecAreaID" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">OrgRecAreaID</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreas.OrgRecAreaID" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -852,17 +857,17 @@
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.RecAreas.RecAreaDescription">
-<span class="sig-name descname"><span class="pre">RecAreaDescription</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreas.RecAreaDescription" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">RecAreaDescription</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreas.RecAreaDescription" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.RecAreas.RecAreaDirections">
-<span class="sig-name descname"><span class="pre">RecAreaDirections</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreas.RecAreaDirections" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">RecAreaDirections</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreas.RecAreaDirections" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.RecAreas.RecAreaEmail">
-<span class="sig-name descname"><span class="pre">RecAreaEmail</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreas.RecAreaEmail" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">RecAreaEmail</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreas.RecAreaEmail" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -872,37 +877,37 @@
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.RecAreas.RecAreaLatitude">
-<span class="sig-name descname"><span class="pre">RecAreaLatitude</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreas.RecAreaLatitude" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">RecAreaLatitude</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreas.RecAreaLatitude" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.RecAreas.RecAreaLongitude">
-<span class="sig-name descname"><span class="pre">RecAreaLongitude</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreas.RecAreaLongitude" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">RecAreaLongitude</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreas.RecAreaLongitude" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.RecAreas.RecAreaMapURL">
-<span class="sig-name descname"><span class="pre">RecAreaMapURL</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreas.RecAreaMapURL" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">RecAreaMapURL</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreas.RecAreaMapURL" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.RecAreas.RecAreaName">
-<span class="sig-name descname"><span class="pre">RecAreaName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreas.RecAreaName" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">RecAreaName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreas.RecAreaName" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.RecAreas.RecAreaPhone">
-<span class="sig-name descname"><span class="pre">RecAreaPhone</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreas.RecAreaPhone" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">RecAreaPhone</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreas.RecAreaPhone" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.RecAreas.RecAreaReservationURL">
-<span class="sig-name descname"><span class="pre">RecAreaReservationURL</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreas.RecAreaReservationURL" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">RecAreaReservationURL</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreas.RecAreaReservationURL" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.RecAreas.RecAreaUseFeeDescription">
-<span class="sig-name descname"><span class="pre">RecAreaUseFeeDescription</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreas.RecAreaUseFeeDescription" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">RecAreaUseFeeDescription</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreas.RecAreaUseFeeDescription" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -912,22 +917,22 @@
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.RecAreas.StayLimit">
-<span class="sig-name descname"><span class="pre">StayLimit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreas.StayLimit" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">StayLimit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreas.StayLimit" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.RecAreas.addresses">
-<span class="sig-name descname"><span class="pre">addresses</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#ridbpy.models.RecAreaAddresses" title="ridbpy.models.RecAreaAddresses"><span class="pre">RecAreaAddresses</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreas.addresses" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">addresses</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.10)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#ridbpy.models.RecAreaAddresses" title="ridbpy.models.RecAreaAddresses"><span class="pre">RecAreaAddresses</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreas.addresses" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.RecAreas.facilities">
-<span class="sig-name descname"><span class="pre">facilities</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#ridbpy.models.Facilities" title="ridbpy.models.Facilities"><span class="pre">Facilities</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreas.facilities" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">facilities</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.10)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#ridbpy.models.Facilities" title="ridbpy.models.Facilities"><span class="pre">Facilities</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ridbpy.models.RecAreas.facilities" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.models.RecAreas.organization">
-<span class="sig-name descname"><span class="pre">organization</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="ridbpy.models.organizations.html#ridbpy.models.organizations.Organizations" title="ridbpy.models.organizations.Organizations"><span class="pre">ridbpy.models.organizations.Organizations</span></a></em><a class="headerlink" href="#ridbpy.models.RecAreas.organization" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">organization</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="ridbpy.models.organizations.html#ridbpy.models.organizations.Organizations" title="ridbpy.models.organizations.Organizations"><span class="pre">Organizations</span></a></em><a class="headerlink" href="#ridbpy.models.RecAreas.organization" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -939,7 +944,7 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="ridbpy.html" class="btn btn-neutral float-left" title="ridbpy package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="ridbpy.config.file_config.html" class="btn btn-neutral float-left" title="ridbpy.config.file_config module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="ridbpy.models.campsites.html" class="btn btn-neutral float-right" title="ridbpy.models.campsites module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

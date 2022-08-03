@@ -1,0 +1,7 @@
+ridbpy.config.file\_config module
+=================================
+
+.. automodule:: ridbpy.config.file_config
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,28 +1,19 @@
-# ridbPy
-
-```{eval-rst}
-.. image:: ../static/ridbpy.png
-    :align: center
-    :alt: ridbPy
-    :target: https://github.com/juftin/ridbpy
+```{include} ../../README.md
+:relative-docs: docs/
+:relative-images:
 ```
 
 ```{toctree}
 ---
 maxdepth: 1
 glob:
+hidden:
 ---
 
-README.md
-cli.md
-API Documentation <api/modules.rst>
-```
-
-```{eval-rst}
-.. image:: https://raw.githubusercontent.com/juftin/juftin/main/static/juftin.png
-    :width: 60
-    :height: 60
-    :align: center
-    :alt: juftin
-    :target: https://github.com/juftin
+ridbPy 🏠 <self>
+Command Line Interface ⌨️ <cli.md>
+API Documentation 🤖 <api/modules.rst>
+Contributing 👥 <contributing.md>
+GitHub 🛠 <https://github.com/juftin/ridbpy>
+Changelog 📝 <https://github.com/juftin/ridbpy/releases>
 ```

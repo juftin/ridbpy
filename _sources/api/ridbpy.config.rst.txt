@@ -1,0 +1,18 @@
+ridbpy.config package
+=====================
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   ridbpy.config.file_config
+
+Module contents
+---------------
+
+.. automodule:: ridbpy.config
+   :members:
+   :undoc-members:
+   :show-inheritance:

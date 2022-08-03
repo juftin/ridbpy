@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ridbpy.application module &mdash; ridbpy 0.0.2 documentation</title>
+  <title>ridbpy.config package &mdash; ridbpy 0.0.2 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
@@ -25,8 +25,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="ridbpy.querying module" href="ridbpy.querying.html" />
-    <link rel="prev" title="ridbpy.models.recareas module" href="ridbpy.models.recareas.html" /> 
+    <link rel="next" title="ridbpy.config.file_config module" href="ridbpy.config.file_config.html" />
+    <link rel="prev" title="ridbpy package" href="ridbpy.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -52,12 +52,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../cli.html">Command Line Interface ⌨️</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">API Documentation 🤖</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="ridbpy.html">ridbpy package</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="ridbpy.html#subpackages">Subpackages</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="ridbpy.html#submodules">Submodules</a><ul class="current">
-<li class="toctree-l4 current"><a class="current reference internal" href="#">ridbpy.application module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="ridbpy.querying.html">ridbpy.querying module</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="ridbpy.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">ridbpy.config package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ridbpy.models.html">ridbpy.models package</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="ridbpy.html#submodules">Submodules</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ridbpy.html#module-ridbpy">Module contents</a></li>
 </ul>
 </li>
@@ -84,7 +84,7 @@
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="modules.html">ridbpy</a> &raquo;</li>
           <li><a href="ridbpy.html">ridbpy package</a> &raquo;</li>
-      <li>ridbpy.application module</li>
+      <li>ridbpy.config package</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -93,56 +93,60 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="module-ridbpy.application">
-<span id="ridbpy-application-module"></span><h1>ridbpy.application module<a class="headerlink" href="#module-ridbpy.application" title="Permalink to this heading"></a></h1>
-<p>Core RIDB-PY Application Variables</p>
-<dl class="py function">
-<dt class="sig sig-object py" id="ridbpy.application.make_conn_str">
-<span class="sig-prename descclassname"><span class="pre">ridbpy.application.</span></span><span class="sig-name descname"><span class="pre">make_conn_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/ridbpy/application.html#make_conn_str"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#ridbpy.application.make_conn_str" title="Permalink to this definition"></a></dt>
-<dd><p>Create a SQLite Conn String</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>file_path</strong> (<em>Path</em>) – Fiole path of the SQLite file</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>SQLAlchemy connection string</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)">str</a></p>
-</dd>
-</dl>
-</dd></dl>
-
+  <section id="ridbpy-config-package">
+<h1>ridbpy.config package<a class="headerlink" href="#ridbpy-config-package" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ridbpy.config.file_config.html">ridbpy.config.file_config module</a></li>
+</ul>
+</div>
+</section>
+<section id="module-ridbpy.config">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-ridbpy.config" title="Permalink to this heading"></a></h2>
+<p>ridbPy - Configuration Helpers</p>
 <dl class="py class">
-<dt class="sig sig-object py" id="ridbpy.application.SQLConfig">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ridbpy.application.</span></span><span class="sig-name descname"><span class="pre">SQLConfig</span></span><a class="reference internal" href="../_modules/ridbpy/application.html#SQLConfig"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#ridbpy.application.SQLConfig" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="ridbpy.config.FileConfig">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ridbpy.config.</span></span><span class="sig-name descname"><span class="pre">FileConfig</span></span><a class="reference internal" href="../_modules/ridbpy/config/file_config.html#FileConfig"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#ridbpy.config.FileConfig" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
-<p>SQL Connection Configuration</p>
+<p>Easy file configuration helper class</p>
 <dl class="py attribute">
-<dt class="sig sig-object py" id="ridbpy.application.SQLConfig.sqlite_file">
-<span class="sig-name descname"><span class="pre">sqlite_file</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">PosixPath('/home/runner/work/ridbpy/ridbpy/main/ridbpy/data/ridb.db')</span></em><a class="headerlink" href="#ridbpy.application.SQLConfig.sqlite_file" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="ridbpy.config.FileConfig.SOURCE_CODE_DIR">
+<span class="sig-name descname"><span class="pre">SOURCE_CODE_DIR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">PosixPath('/home/runner/work/ridbpy/ridbpy/main/ridbpy')</span></em><a class="headerlink" href="#ridbpy.config.FileConfig.SOURCE_CODE_DIR" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="ridbpy.application.SQLConfig.sqlite_conn_str">
-<span class="sig-name descname"><span class="pre">sqlite_conn_str</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'sqlite:////home/runner/work/ridbpy/ridbpy/main/ridbpy/data/ridb.db'</span></em><a class="headerlink" href="#ridbpy.application.SQLConfig.sqlite_conn_str" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="ridbpy.config.FileConfig.PROJECT_DIR">
+<span class="sig-name descname"><span class="pre">PROJECT_DIR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">PosixPath('/home/runner/work/ridbpy/ridbpy/main')</span></em><a class="headerlink" href="#ridbpy.config.FileConfig.PROJECT_DIR" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="ridbpy.application.SQLConfig.connection_string">
-<span class="sig-name descname"><span class="pre">connection_string</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'sqlite:////home/runner/work/ridbpy/ridbpy/main/ridbpy/data/ridb.db'</span></em><a class="headerlink" href="#ridbpy.application.SQLConfig.connection_string" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="ridbpy.config.FileConfig.RIDBPY_DIR">
+<span class="sig-name descname"><span class="pre">RIDBPY_DIR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">PosixPath('/home/runner/work/ridbpy/ridbpy/main/ridbpy')</span></em><a class="headerlink" href="#ridbpy.config.FileConfig.RIDBPY_DIR" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ridbpy.config.FileConfig.DATA_DIR">
+<span class="sig-name descname"><span class="pre">DATA_DIR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">PosixPath('/home/runner/work/ridbpy/ridbpy/main/ridbpy/data')</span></em><a class="headerlink" href="#ridbpy.config.FileConfig.DATA_DIR" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ridbpy.config.FileConfig.local_zip_file">
+<span class="sig-name descname"><span class="pre">local_zip_file</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">PosixPath('/home/runner/work/ridbpy/ridbpy/main/ridbpy/data/data.zip')</span></em><a class="headerlink" href="#ridbpy.config.FileConfig.local_zip_file" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
+</section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="ridbpy.models.recareas.html" class="btn btn-neutral float-left" title="ridbpy.models.recareas module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="ridbpy.querying.html" class="btn btn-neutral float-right" title="ridbpy.querying module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="ridbpy.html" class="btn btn-neutral float-left" title="ridbpy package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="ridbpy.config.file_config.html" class="btn btn-neutral float-right" title="ridbpy.config.file_config module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

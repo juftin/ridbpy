@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contributing &mdash; ridbpy 0.0.2 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/autodoc_pydantic.css" type="text/css" />
+      <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="_static/autoclasstoc.css" type="text/css" />
+    <link rel="shortcut icon" href="https://juftin.com/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/clipboard.min.js"></script>
+        <script src="_static/copybutton.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="ridbpy.querying module" href="api/ridbpy.querying.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> ridbpy
+          </a>
+              <div class="version">
+                0.0.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="index.html">ridbPy 🏠</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">Command Line Interface ⌨️</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/modules.html">API Documentation 🤖</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Contributing 👥</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#requirements">Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#coding">Coding</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#running">Running</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#testing">Testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#releasing">Releasing</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/juftin/ridbpy">GitHub 🛠</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/juftin/ridbpy/releases">Changelog 📝</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ridbpy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Contributing</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="contributing">
+<h1>Contributing<a class="headerlink" href="#contributing" title="Permalink to this heading"></a></h1>
+<section id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this heading"></a></h2>
+<p>ridbPy uses <a class="reference external" href="https://python-poetry.org/">Poetry</a> to  manage its Python environment.
+To get started first install <code class="docutils literal notranslate"><span class="pre">poetry</span></code>:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pipx install poetry
+</pre></div>
+</div>
+<p><a class="reference external" href="https://pipxproject.github.io/pipx/">pipx</a> is preferred, but you can also install with <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">--user</span></code>.</p>
+</section>
+<section id="coding">
+<h2>Coding<a class="headerlink" href="#coding" title="Permalink to this heading"></a></h2>
+<p>ridbPy makes use of a couple tools to help with contributing via
+<a class="reference external" href="https://pre-commit.com/">pre-commit</a>. <code class="docutils literal notranslate"><span class="pre">pre-commit</span></code> is a tool to manage git-hooks scripts, which are useful
+for identifying simple issues before submission to code review.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pipx install pre-commit
+pre-commit install
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ridbPy</span></code>’s instance of <code class="docutils literal notranslate"><span class="pre">pre-commit</span></code> uses tools like <a class="reference external" href="https://github.com/psf/black">black</a>
+and
+<a class="reference external" href="https://pycqa.github.io/isort/">isort</a> to format your code in a standardized way.</p></li>
+<li><p>After cloning this repo run <code class="docutils literal notranslate"><span class="pre">pre-commit</span> <span class="pre">install</span></code>.</p></li>
+<li><p>Done, now pre-commit will run automatically on git commit. To run it manually on your changed
+code run <code class="docutils literal notranslate"><span class="pre">pre-commit</span> <span class="pre">run</span></code> on your command line.</p></li>
+</ul>
+</section>
+<section id="running">
+<h2>Running<a class="headerlink" href="#running" title="Permalink to this heading"></a></h2>
+<p>Run the command-line interface from the source tree:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>poetry install
+poetry run ridbpy
+</pre></div>
+</div>
+<p>Run an interactive Python session:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>poetry install
+poetry run python
+</pre></div>
+</div>
+</section>
+<section id="testing">
+<h2>Testing<a class="headerlink" href="#testing" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://tox.wiki/en/latest/">tox</a> is a tool to standardize and manage testing and routines
+using Python virtual environments</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ridbPy</span></code>’s instance of <code class="docutils literal notranslate"><span class="pre">tox</span></code> runs Python unit tests, and uses tools like
+<a class="reference external" href="https://github.com/python/mypy">mypy</a> and <a class="reference external" href="https://flake8.pycqa.org/en/latest/pre">flake8</a> to
+format.</p></li>
+<li><p>To run all <code class="docutils literal notranslate"><span class="pre">tox</span></code> tests (which get run as part of GitHub Actions) locally, just enter <code class="docutils literal notranslate"><span class="pre">tox</span></code>
+into your command line or use poetry.</p></li>
+</ul>
+<p>Run the Full Test Suite:</p>
+<div class="highlight-tox notranslate"><div class="highlight"><pre><span></span>poetry run tox
+</pre></div>
+</div>
+<p>Run Just One Testing Tool:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>poetry run tox -e mypy
+</pre></div>
+</div>
+</section>
+<section id="releasing">
+<h2>Releasing<a class="headerlink" href="#releasing" title="Permalink to this heading"></a></h2>
+<p>Releases are triggered entirely by CI/CD via Pull requests being merged into
+the main branch.</p>
+<p>The version bump on each release is decided by the labels placed on the Pull Requests.
+There must be one, and only one, of the following labels on each pull request to the main branch:
+<code class="docutils literal notranslate"><span class="pre">BUMP_MAJOR</span></code>, <code class="docutils literal notranslate"><span class="pre">BUMP_MINOR</span></code>, <code class="docutils literal notranslate"><span class="pre">BUMP_PATCH</span></code>. Pull Requests will be un-mergeable unless the version on
+your <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> matches the main branch and the proper version labels are applied.</p>
+<p>The Release workflow performs the following automated steps:</p>
+<ul class="simple">
+<li><p>Publish a GitHub Release.</p></li>
+<li><p>Apply a version tag to the repository.</p></li>
+</ul>
+<p>Release notes are populated with the titles and authors of merged pull requests.
+You can group the pull requests into separate sections
+by applying labels to them, like this:</p>
+<!-- table-release-drafter-sections-begin -->
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Pull Request Label</p></th>
+<th class="head"><p>Section in Release Notes</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">breaking</span></code></p></td>
+<td><p>💥 Breaking Changes</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">enhancement</span></code></p></td>
+<td><p>🚀 Features</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">removal</span></code></p></td>
+<td><p>🔥 Removals and Deprecations</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">bug</span></code></p></td>
+<td><p>🐞 Fixes</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">performance</span></code></p></td>
+<td><p>🐎 Performance</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">testing</span></code></p></td>
+<td><p>🚨 Testing</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ci</span></code></p></td>
+<td><p>👷 Continuous Integration</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">documentation</span></code></p></td>
+<td><p>📚 Documentation</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">refactoring</span></code></p></td>
+<td><p>🔨 Refactoring</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">style</span></code></p></td>
+<td><p>💄 Style</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">dependencies</span></code></p></td>
+<td><p>📦 Dependencies</p></td>
+</tr>
+</tbody>
+</table>
+<!-- table-release-drafter-sections-end -->
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="api/ridbpy.querying.html" class="btn btn-neutral float-left" title="ridbpy.querying module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Justin Flannery.</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
