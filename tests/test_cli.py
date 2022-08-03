@@ -5,7 +5,7 @@ Test cases for the __main__ module.
 import pytest
 from click.testing import CliRunner
 
-from ridbpy.cli import command_line_interface
+from ridbpy._cli import command_line_interface
 
 
 @pytest.fixture

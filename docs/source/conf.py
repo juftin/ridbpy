@@ -10,9 +10,9 @@ _project_path = Path(__file__).resolve().parent.parent.parent
 _project_dir = str(_project_path)
 sys.path.insert(0, _project_dir)
 
-from ridbpy._version import __application__, __version__  # noqa
+from ridbpy._version import __application__, __author__, __version__  # noqa
 
-_author = "Justin Flannery"
+_author = __author__
 project = __application__
 copyright = f"{datetime.now().year}, {_author}"
 author = _author
@@ -64,6 +64,9 @@ html_theme_options = {
 }
 html_show_sphinx = False
 html_show_sourcelink = False
+# html_logo = "https://raw.githubusercontent.com/juftin/juftin/main/static/juftin.png"
+html_favicon = "https://juftin.com/favicon.ico"
+
 
 source_suffix = {
     ".rst": "restructuredtext",
@@ -88,5 +91,3 @@ autodoc_pydantic_settings_show_json = False
 
 always_document_default_args = True
 docstring_default_arg_substitution = "**[Default]:**"
-
-html_favicon = "https://juftin.com/favicon.ico"

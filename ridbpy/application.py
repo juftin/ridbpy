@@ -8,20 +8,8 @@ from pathlib import Path
 import sqlalchemy
 from sqlmodel import Session, create_engine
 
+from ridbpy.config import FileConfig
 from ridbpy.models import ALL_TABLES  # noqa
-
-
-class FileConfig:
-    """
-    File Configuration
-    """
-
-    _this_file = Path(__file__).resolve()
-    RIDBPY_DIR = _this_file.parent
-    DATA_DIR = RIDBPY_DIR.joinpath("data")
-    PROJECT_DIR = RIDBPY_DIR.parent
-
-    local_zip_file = DATA_DIR.joinpath("data.zip")
 
 
 def make_conn_str(file_path: Path) -> str:
@@ -60,7 +48,7 @@ class SQLConfig:
 
 _conn_str: str = str(SQLConfig.connection_string)
 sqlalchemy_engine = sqlalchemy.create_engine(_conn_str, echo=False)
-engine = create_engine(_conn_str, echo=True)
+engine = create_engine(_conn_str, echo=False)
 _raw_conn_str = make_conn_str(file_path=SQLConfig.sqlite_file.with_name("ridb_raw.db"))
 raw_engine = sqlalchemy.create_engine(_raw_conn_str)
 
