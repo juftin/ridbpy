@@ -1,5 +1,7 @@
 # ridbPy
 
+![ridbpy.png](docs/source/_static/ridbpy.png)
+
 Pythonic Interface to the Recreation Information Database (RIDB)
 
 #### Check Out the [Docs](https://juftin.github.io/ridbpy/)

@@ -15,7 +15,8 @@ from rich import print
 from sqlmodel import SQLModel
 
 from ridbpy import __application__, __version__
-from ridbpy.application import FileConfig, SQLConfig, engine, raw_engine, session
+from ridbpy.application import SQLConfig, engine, raw_engine, session
+from ridbpy.config import FileConfig
 from ridbpy.models import ALL_TABLES, RecAreas
 
 
