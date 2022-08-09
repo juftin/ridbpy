@@ -13,6 +13,7 @@ hidden:
 ridbPy 🏠 <self>
 Command Line Interface ⌨️ <cli.md>
 API Documentation 🤖 <api/modules.rst>
+Database Documentation 💾 <database.md>
 Contributing 👥 <contributing.md>
 GitHub 🛠 <https://github.com/juftin/ridbpy>
 Changelog 📝 <https://github.com/juftin/ridbpy/releases>

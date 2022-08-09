@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ridbpy.config.file_config &mdash; ridbpy 0.0.2 documentation</title>
+  <title>ridbpy.config.file_config &mdash; ridbpy 0.0.3 documentation</title>
       <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/autodoc_pydantic.css" type="text/css" />
@@ -34,7 +34,7 @@
             <a href="../../../index.html" class="icon icon-home"> ridbpy
           </a>
               <div class="version">
-                0.0.2
+                0.0.3
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
@@ -48,6 +48,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../index.html">ridbPy 🏠</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../cli.html">Command Line Interface ⌨️</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../api/modules.html">API Documentation 🤖</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../database.html">Database Documentation 💾</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../contributing.html">Contributing 👥</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://github.com/juftin/ridbpy">GitHub 🛠</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://github.com/juftin/ridbpy/releases">Changelog 📝</a></li>
@@ -83,6 +84,7 @@
 <span class="sd">&quot;&quot;&quot;</span>
 
 <span class="kn">import</span> <span class="nn">pathlib</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Optional</span>
 
 
 <div class="viewcode-block" id="FileConfig"><a class="viewcode-back" href="../../../api/ridbpy.config.file_config.html#ridbpy.config.FileConfig">[docs]</a><span class="k">class</span> <span class="nc">FileConfig</span><span class="p">:</span>
@@ -99,7 +101,17 @@
     <span class="n">RIDBPY_DIR</span> <span class="o">=</span> <span class="n">SOURCE_CODE_DIR</span>
     <span class="n">DATA_DIR</span> <span class="o">=</span> <span class="n">RIDBPY_DIR</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="s2">&quot;data&quot;</span><span class="p">)</span>
 
-    <span class="n">local_zip_file</span> <span class="o">=</span> <span class="n">DATA_DIR</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="s2">&quot;data.zip&quot;</span><span class="p">)</span></div>
+    <span class="n">local_zip_file</span> <span class="o">=</span> <span class="n">DATA_DIR</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="s2">&quot;data.zip&quot;</span><span class="p">)</span>
+
+<div class="viewcode-block" id="FileConfig.get_data_dir"><a class="viewcode-back" href="../../../api/ridbpy.config.file_config.html#ridbpy.config.FileConfig.get_data_dir">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">get_data_dir</span><span class="p">(</span><span class="n">ridb_dir</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Get the data directory</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">ridb_dir</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">FileConfig</span><span class="o">.</span><span class="n">DATA_DIR</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">ridb_dir</span><span class="p">)</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span></div></div>
 </pre></div>
 
            </div>
