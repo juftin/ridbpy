@@ -3,6 +3,9 @@ name: Documentation
 on:
     release:
         types: [published]
+    pull_request:
+        branches:
+        -   main
 
 jobs:
     github-pages-publish:
@@ -38,6 +41,7 @@ jobs:
             working-directory: ${{ github.workspace }}/main
             run: |
                 tox -e schemaspy
+                docker-compose --file ${{ github.workspace }}/main/docs/schemaspy/docker-compose.yaml up
                 tox -e sphinx
         -   name: Setup Git Config
             run: |
