@@ -37,6 +37,7 @@ jobs:
         -   name: Tox Sphinx Generation
             working-directory: ${{ github.workspace }}/main
             run: |
+                tox -e schemaspy
                 tox -e sphinx
         -   name: Setup Git Config
             run: |
