@@ -17,12 +17,12 @@ jobs:
                 path: ${{ github.workspace }}/main
                 ref: ${{ github.ref }}
                 fetch-depth: 0
-        -   name: Create gh-pages if not exists
-            working-directory: ${{ github.workspace }}/main
-            run: |
-                git checkout gh-pages || git checkout -b gh-pages
-                git push --set-upstream origin gh-pages || true
-                git checkout main --
+#        -   name: Create gh-pages if not exists
+#            working-directory: ${{ github.workspace }}/main
+#            run: |
+#                git checkout gh-pages || git checkout -b gh-pages
+#                git push --set-upstream origin gh-pages || true
+#                git checkout main --
         -   name: Checkout gh-pages Branch
             uses: actions/checkout@v3
             with:
