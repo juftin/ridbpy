@@ -3,9 +3,6 @@ name: Documentation
 on:
     release:
         types: [published]
-    pull_request:
-        branches:
-        -   main
 
 jobs:
     github-pages-publish:
