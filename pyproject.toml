@@ -5,7 +5,7 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry]
 name = "ridbpy"
 description = "Pythonic Interface to the Recreation Information Database (RIDB)"
-version = "0.0.2"
+version = "0.0.3"
 authors = ["Justin Flannery <juftin@juftin.com>"]
 license = "MIT"
 readme = "README.md"
