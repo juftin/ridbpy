@@ -3,6 +3,9 @@ name: Documentation
 on:
     release:
         types: [published]
+    pull_request:
+        branches:
+        -   main
 
 jobs:
     github-pages-publish:
@@ -37,6 +40,7 @@ jobs:
         -   name: Tox Sphinx Generation
             working-directory: ${{ github.workspace }}/main
             run: |
+                tox -e schemaspy
                 tox -e sphinx
         -   name: Setup Git Config
             run: |

@@ -138,3 +138,4 @@ dmypy.json
 /ridbpy/data/data.zip
 /ridbpy/data/ridb.db
 /ridbpy/data/ridb_raw.db
+/docs/source/extras/

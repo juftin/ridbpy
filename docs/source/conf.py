@@ -57,6 +57,7 @@ myst_enable_extensions = [
 templates_path = ["_templates"]
 html_static_path = ["_static"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
+html_extra_path = ["extras"]
 
 html_theme = "sphinx_rtd_theme"
 html_theme_options = {

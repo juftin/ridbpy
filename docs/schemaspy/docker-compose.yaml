@@ -1,0 +1,19 @@
+services:
+    schemaspy:
+        container_name: schemaspy
+        image: schemaspy/schemaspy:6.1.0
+        volumes:
+        -   ./drivers:/drivers/
+        -   ./properties/schemaspy.properties:/schemaspy.properties
+        -   ./properties/sqlite-xerial.properties:/sqlite-xerial.properties
+        -   ../source/extras/schemaspy/:/output/
+        -   ../../ridbpy/data/ridb.db:/ridb.db
+        command:
+        -   java
+        -   -jar
+        -   schemaspy-6.1.0.jar
+        -   -configFile
+        -   /schemaspy.properties
+        -   -hq
+        -   -debug
+        entrypoint: []

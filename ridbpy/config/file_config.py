@@ -3,6 +3,7 @@ File Configuration Helpers for ridbPy
 """
 
 import pathlib
+from typing import Optional
 
 
 class FileConfig:
@@ -20,3 +21,13 @@ class FileConfig:
     DATA_DIR = RIDBPY_DIR.joinpath("data")
 
     local_zip_file = DATA_DIR.joinpath("data.zip")
+
+    @staticmethod
+    def get_data_dir(ridb_dir: Optional[str] = None) -> pathlib.Path:
+        """
+        Get the data directory
+        """
+        if ridb_dir is None:
+            return FileConfig.DATA_DIR
+        else:
+            return pathlib.Path(ridb_dir).resolve()
