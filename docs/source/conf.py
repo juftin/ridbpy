@@ -68,7 +68,6 @@ html_show_sourcelink = False
 # html_logo = "https://raw.githubusercontent.com/juftin/juftin/main/static/juftin.png"
 html_favicon = "https://juftin.com/favicon.ico"
 
-
 source_suffix = {
     ".rst": "restructuredtext",
     ".txt": "markdown",
