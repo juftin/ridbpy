@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ridbpy.config package &mdash; ridbpy 0.0.7 documentation</title>
+  <title>ridbpy.config package &mdash; ridbpy 0.0.8 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
@@ -20,6 +20,7 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -37,7 +38,7 @@
             <a href="../index.html" class="icon icon-home"> ridbpy
           </a>
               <div class="version">
-                0.0.7
+                0.0.8
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -82,10 +83,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="modules.html">ridbpy</a> &raquo;</li>
-          <li><a href="ridbpy.html">ridbpy package</a> &raquo;</li>
-      <li>ridbpy.config package</li>
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">ridbpy</a></li>
+          <li class="breadcrumb-item"><a href="ridbpy.html">ridbpy package</a></li>
+      <li class="breadcrumb-item active">ridbpy.config package</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -100,7 +101,18 @@
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="ridbpy.config.file_config.html">ridbpy.config.file_config module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ridbpy.config.file_config.html">ridbpy.config.file_config module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ridbpy.config.file_config.html#ridbpy.config.file_config.FileConfig"><code class="docutils literal notranslate"><span class="pre">FileConfig</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ridbpy.config.file_config.html#ridbpy.config.file_config.FileConfig.SOURCE_CODE_DIR"><code class="docutils literal notranslate"><span class="pre">FileConfig.SOURCE_CODE_DIR</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="ridbpy.config.file_config.html#ridbpy.config.file_config.FileConfig.PROJECT_DIR"><code class="docutils literal notranslate"><span class="pre">FileConfig.PROJECT_DIR</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="ridbpy.config.file_config.html#ridbpy.config.file_config.FileConfig.RIDBPY_DIR"><code class="docutils literal notranslate"><span class="pre">FileConfig.RIDBPY_DIR</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="ridbpy.config.file_config.html#ridbpy.config.file_config.FileConfig.DATA_DIR"><code class="docutils literal notranslate"><span class="pre">FileConfig.DATA_DIR</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="ridbpy.config.file_config.html#ridbpy.config.file_config.FileConfig.local_zip_file"><code class="docutils literal notranslate"><span class="pre">FileConfig.local_zip_file</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="ridbpy.config.file_config.html#ridbpy.config.file_config.FileConfig.get_data_dir"><code class="docutils literal notranslate"><span class="pre">FileConfig.get_data_dir()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </div>
 </section>
@@ -110,7 +122,7 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="ridbpy.config.FileConfig">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ridbpy.config.</span></span><span class="sig-name descname"><span class="pre">FileConfig</span></span><a class="reference internal" href="../_modules/ridbpy/config/file_config.html#FileConfig"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#ridbpy.config.FileConfig" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Easy file configuration helper class</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="ridbpy.config.FileConfig.SOURCE_CODE_DIR">
@@ -146,7 +158,7 @@
 <dd class="field-odd"><p><strong>ridb_dir</strong> (<em>optional</em>) – <strong>[Default]:</strong> <code class="code docutils literal notranslate"><span class="pre">None</span></code></p>
 </dd>
 <dt class="field-even">Return type</dt>
-<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a></p>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a></p>
 </dd>
 </dl>
 </dd></dl>

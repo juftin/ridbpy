@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <database name="ridb.db" schema="%" type="SQLite - 3.36.0">
    <tables>
-      <table name="CampsiteAttributes" numRows="2116182" remarks="" type="TABLE">
+      <table name="CampsiteAttributes" numRows="2125405" remarks="" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="10" id="0" name="AttributeID" nullable="false" remarks="" size="2000000000" type="INTEGER" typeCode="4"/>
          <column autoUpdated="false" defaultValue="null" digits="10" id="1" name="AttributeName" nullable="false" remarks="" size="2000000000" type="VARCHAR" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="10" id="2" name="AttributeValue" nullable="true" remarks="" size="2000000000" type="VARCHAR" typeCode="12"/>
@@ -32,7 +32,7 @@
             <column ascending="true" name="EntityId"/>
          </index>
       </table>
-      <table name="Campsites" numRows="114490" remarks="" type="TABLE">
+      <table name="Campsites" numRows="115013" remarks="" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="10" id="0" name="CampsiteID" nullable="false" remarks="" size="2000000000" type="INTEGER" typeCode="4">
             <child column="EntityId" foreignKey="" implied="false" onDeleteCascade="false" table="CampsiteAttributes"/>
             <child column="CampsiteID" foreignKey="" implied="false" onDeleteCascade="false" table="PermittedEquipment"/>
@@ -63,7 +63,7 @@
             <column ascending="true" name="TypeOfUse"/>
          </index>
       </table>
-      <table name="Facilities" numRows="14061" remarks="" type="TABLE">
+      <table name="Facilities" numRows="14096" remarks="" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="10" id="0" name="FacilityID" nullable="false" remarks="" size="2000000000" type="VARCHAR" typeCode="12">
             <child column="FacilityID" foreignKey="" implied="false" onDeleteCascade="false" table="Campsites"/>
             <child column="FacilityID" foreignKey="" implied="false" onDeleteCascade="false" table="FacilityAddresses"/>
@@ -111,7 +111,7 @@
             <column ascending="true" name="FacilityID"/>
          </index>
       </table>
-      <table name="FacilityAddresses" numRows="15842" remarks="" type="TABLE">
+      <table name="FacilityAddresses" numRows="15873" remarks="" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="10" id="0" name="FacilityAddressID" nullable="false" remarks="" size="2000000000" type="VARCHAR" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="10" id="1" name="FacilityID" nullable="true" remarks="" size="2000000000" type="INTEGER" typeCode="4">
             <parent column="FacilityID" foreignKey="" implied="false" onDeleteCascade="false" table="Facilities"/>
@@ -168,7 +168,7 @@
             <column ascending="true" name="OrgID"/>
          </index>
       </table>
-      <table name="OrgEntities" numRows="17271" remarks="" type="TABLE">
+      <table name="OrgEntities" numRows="17296" remarks="" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="10" id="0" name="EntityId" nullable="false" remarks="" size="2000000000" type="VARCHAR" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="10" id="1" name="OrgID" nullable="false" remarks="" size="2000000000" type="VARCHAR" typeCode="12">
             <parent column="OrgID" foreignKey="" implied="false" onDeleteCascade="false" table="Organizations"/>
@@ -188,7 +188,7 @@
             <column ascending="true" name="EntityId"/>
          </index>
       </table>
-      <table name="PermittedEquipment" numRows="386334" remarks="" type="TABLE">
+      <table name="PermittedEquipment" numRows="388230" remarks="" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="10" id="0" name="CampsiteID" nullable="false" remarks="" size="2000000000" type="INTEGER" typeCode="4">
             <parent column="CampsiteID" foreignKey="" implied="false" onDeleteCascade="false" table="Campsites"/>
          </column>
@@ -233,7 +233,7 @@
             <column ascending="true" name="RecAreaAddressID"/>
          </index>
       </table>
-      <table name="RecAreaFacilities" numRows="22988" remarks="" type="TABLE">
+      <table name="RecAreaFacilities" numRows="23140" remarks="" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="10" id="0" name="RecAreaID" nullable="true" remarks="" size="2000000000" type="TEXT" typeCode="12">
             <parent column="RecAreaID" foreignKey="Implied Constraint" implied="true" onDeleteCascade="false" table="RecAreas"/>
          </column>
@@ -241,7 +241,7 @@
             <parent column="FacilityID" foreignKey="Implied Constraint" implied="true" onDeleteCascade="false" table="Facilities"/>
          </column>
       </table>
-      <table name="RecAreas" numRows="3762" remarks="" type="TABLE">
+      <table name="RecAreas" numRows="3763" remarks="" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="10" id="0" name="RecAreaID" nullable="false" remarks="" size="2000000000" type="VARCHAR" typeCode="12">
             <child column="ParentRecAreaID" foreignKey="" implied="false" onDeleteCascade="false" table="Facilities"/>
             <child column="RecAreaID" foreignKey="" implied="false" onDeleteCascade="false" table="RecAreaAddresses"/>
