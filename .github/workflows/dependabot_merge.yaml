@@ -10,6 +10,7 @@ jobs:
         steps:
         -   name: Combine Dependabot PRs
             uses: Legal-and-General/dependabot-batcher@v1.0.2
-            token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-            batchBranchName: ci/dependabot/batcher/updates
-            batchPullTitle: 'Dependabot 🤖: Batcher Updates'
+            with:
+                token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+                batchBranchName: ci/dependabot/batcher/updates
+                batchPullTitle: 'Dependabot 🤖: Batcher Updates'
