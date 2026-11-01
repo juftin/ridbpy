@@ -28,7 +28,7 @@ jobs:
                 echo "NUMBER: ${{ steps.PR.outputs.number }}"
                 echo "URL: ${{ steps.PR.outputs.pr_url }}"
         -   name: Set up Python
-            uses: actions/setup-python@v4
+            uses: actions/setup-python@v7
             with:
                 python-version: '3.9'
         -   name: Upgrade pip
@@ -83,7 +83,7 @@ jobs:
                 fetch-depth: 2
                 ref: main
         -   name: Set up Python
-            uses: actions/setup-python@v4
+            uses: actions/setup-python@v7
             with:
                 python-version: '3.9'
         -   name: Upgrade pip
